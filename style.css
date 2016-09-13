@@ -1,0 +1,199 @@
+body {
+    background-image: url("images/mountains.jpg");
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 160% 120%;
+
+}
+
+/*NAVIGATOR*//*NAVIGATOR*//*NAVIGATOR*//*NAVIGATOR*//*NAVIGATOR*//*NAVIGATOR*//*NAVIGATOR*//*NAVIGATOR*//*NAVIGATOR*/
+
+#left_nav li {
+    list-style-type: none;
+    margin-right: 0px;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.nav>li>a:hover, .nav>a:focus {
+    background-color: transparent;
+    transition: color 400ms;
+    color: grey;
+}
+
+#left_nav {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+}
+a:hover{
+    text-decoration: none;
+
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size:19px;
+    font-family:'Lato';
+    font-weight: 100;
+
+    /*border-bottom: 3px black solid;*/
+}
+li {
+    border-top: 1px black solid;
+    text-align: center;
+    margin-right: 50px;
+}
+#heading {
+    font-family: Armata;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+#em{
+    height: 30px;
+    margin-bottom: -4px;
+}
+#ln{
+    height: 20px;
+    margin-bottom: 5px;
+}
+.social{
+    margin: 10px;
+}
+
+.social a {
+    display: inline-block;
+    border: 1px white solid;
+    margin: 0 8px;
+}
+.social a >img{
+    height: 25px;
+    width: 25px;
+    margin: 0 4px;
+}
+
+/*ABOUT ME*//*ABOUT ME*//*ABOUT ME*//*ABOUT ME*//*ABOUT ME*//*ABOUT ME*//*ABOUT ME*//*ABOUT ME*//*ABOUT ME*//*ABOUT ME*/
+
+
+.about_me_content {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -22px;
+    position: absolute;
+    border-style: solid;
+    color: lightslategray;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-width: 1px;
+}
+
+
+
+.title h1 {
+    text-align: left;
+    color: white;
+    border-bottom: lightslategray 6px;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-family: Lato;
+    display: inline-block;
+    -webkit-transition: all 0.9s ease-in;
+    transition: all 0.9s ease-in;
+
+}
+
+
+.about_me_content h2 {
+    font-family: Lato;
+    font-weight: 700;
+    text-align: left;
+    color: white;
+    display: block;
+    -webkit-transition: all 0.9s ease-in;
+    transition: all 0.9s ease-in;
+
+
+}
+
+.about_me_content p {
+    font-family: Lato;
+    text-align: left;
+    color: black;
+    margin-right: 10vw;
+    -webkit-transition: width 1s, height 0.9s, ease-in;
+    transition: width 1s, height 0.9s, ease-in;
+
+}
+
+
+/*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*/
+
+
+
+.skills_main {
+    margin-left: 80px;
+    margin-right: 100px;
+    margin-top: -22px;
+    position: absolute;
+    border-style: solid;
+    color: lightslategray;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-width: 1px;
+}
+
+.skills_main li {
+    color: white;
+    font-size: 25px;
+    list-style-type: upper-roman;
+    font-family: Lato;
+    font-weight: 700;
+}
+
+.skills_main p {
+    color: white;
+    font-family: Lato;
+    margin-right: 10vw;
+}
+
+
+
+/*EXPERIENCE PAGE*//*EXPERIENCE PAGE*//*EXPERIENCE PAGE*//*EXPERIENCE PAGE*//*EXPERIENCE PAGE*//*EXPERIENCE PAGE*/
+
+.exp_main {
+    color: white;
+    font-family: Lato;
+    margin-left: 80px;
+    margin-right: 100px;
+    margin-top: -22px;
+    position: absolute;
+    border-style: solid;
+    color: lightslategray;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-width: 1px;
+    padding-top: 6px;
+}
+
+.exp_main p {
+    color: white;
+    margin-right: 10vw;
+}
+
+.exp_main li {
+    font-size: 25px;
+    list-style-type: upper-roman;
+    font-weight: 700;
+    color: white;
+}
