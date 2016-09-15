@@ -8,6 +8,8 @@
           rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic'
           rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="script.js"></script>
 
 </head>
 <body>
@@ -15,9 +17,9 @@
         <div class="navbar navbar-default" id="left_nav">
             <h1 id="heading">Kevin Ngo.</h1>
             <ul class="nav nav-pills nav-stacked">
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="experience.html">Experience</a></li>
+                <li><a id="aboutMeNav" href="#">About Me</a></li>
+                <li><a id='skillsNav' href="#">Skills</a></li>
+                <li><a href="#">Experience</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Resume</a></li>
                 <li>
@@ -31,35 +33,47 @@
         </div>
     </div>
     <div id="main" class="col-md-7">
-        <div class="title">
-            <h1>About Me</h1>
+        <div class="aboutMe">
+            <div class="title">
+                <h1>About Me</h1>
+            </div>
+            <div class="aboutMeContent">
+                <h2><b>Background</b></h2>
+                <p>My name is Kevin, I'm 22 years old, 5'11, and I suck at biographies.
+                I started off pursuing a Music Production degree as an undergrad at
+                Irvine Valley College. I later entered a job that allowed me to pursue
+                a career in IT networking. After realizing that wasn't the path for me I
+                decided to join the military as a combat medic in the Army Reserve.
+                When I came back from training I was introduced to HTML by my girlfriend
+                at the time and I was hooked ever since.</p>
+                <h2>Why Root 1?</h2>
+                <p>I'm taking this root class in order to prep for the June cohort for the
+               full immersion program. I'm also trying to improve on the HTML/CSS
+               knowledge that I've already attained.</p>
+                <h2>What Kind of Job Am I Looking For?</h2>
+                <p>I'm really just trying to get an entry-level web development job anywhere,
+               just to get my feet wet in the industry ad hopefully advance from there.</p>
+                <h2>Why Web-Development Though?</h2>
+                <p>I've never been an incredible student in terms of traditional schooling.
+               If I'm not interested in the subject then I just won't be motivated to
+               pass the class. Coding is something that generally interests me. It's
+               something that I kind of have a knack for and there are nights where I
+               fantasize about being a coder for a living more than a linebacker for
+               the Raiders. Coding has by far been one of the most frustrating and yet
+               rewarding and satisfying things I have ever tried my hand at and if I
+               can make a career out of it and do it for the rest of my life then I'll
+               take any opportunity I can get.</p>
+            </div>
         </div>
-        <div class="about_me_content">
-            <h2><b>Background</b></h2>
-            <p>My name is Kevin, I'm 22 years old, 5'11, and I suck at biographies.
-            I started off pursuing a Music Production degree as an undergrad at
-            Irvine Valley College. I later entered a job that allowed me to pursue
-            a career in IT networking. After realizing that wasn't the path for me I
-            decided to join the military as a combat medic in the Army Reserve.
-            When I came back from training I was introduced to HTML by my girlfriend
-            at the time and I was hooked ever since.</p>
-            <h2>Why Root 1?</h2>
-            <p>I'm taking this root class in order to prep for the June cohort for the
-           full immersion program. I'm also trying to improve on the HTML/CSS
-           knowledge that I've already attained.</p>
-            <h2>What Kind of Job Am I Looking For?</h2>
-            <p>I'm really just trying to get an entry-level web development job anywhere,
-           just to get my feet wet in the industry ad hopefully advance from there.</p>
-            <h2>Why Web-Development Though?</h2>
-            <p>I've never been an incredible student in terms of traditional schooling.
-           If I'm not interested in the subject then I just won't be motivated to
-           pass the class. Coding is something that generally interests me. It's
-           something that I kind of have a knack for and there are nights where I
-           fantasize about being a coder for a living more than a linebacker for
-           the Raiders. Coding has by far been one of the most frustrating and yet
-           rewarding and satisfying things I have ever tried my hand at and if I
-           can make a career out of it and do it for the rest of my life then I'll
-           take any opportunity I can get.</p>
+        <div class="skills">
+            <div class="title">
+                <h1>Skills</h1>
+            </div>
+            <div class="skillsContent">
+                <div>
+                    <img class="skillsImg" src="images/html.png">
+                </div>
+            </div>
         </div>
     </div>
 </body>
