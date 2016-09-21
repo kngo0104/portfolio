@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kevin's First Portfolio</title>
+    <title>Kevin Ngo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,900|Titillium+Web|Armata'
@@ -13,15 +13,15 @@
 
 </head>
 <body>
-    <div class="col-md-3">
+    <div class="col-md-3 col-lg-3">
         <div class="navbar navbar-default" id="left_nav">
             <h1 id="heading">Kevin Ngo.</h1>
             <ul class="nav nav-pills nav-stacked">
                 <li><a id="aboutMeNav" href="#">About Me</a></li>
                 <li><a id='skillsNav' href="#">Skills</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
+                <li><a id="expNav" href="#">Experience</a></li>
+                <li><a id="projectsNav" href="#">Projects</a></li>
+                <li><a id="resumeNav" href="#">Resume</a></li>
                 <li>
                     <div class="social">
                         <a href="#" ><img id="gh" src="images/github.png"></a>
@@ -32,49 +32,91 @@
             </ul>
         </div>
     </div>
-    <div id="main" class="col-md-7">
+    <div id="main" class="col-md-8 col-lg-8">
+        <!--About me section-->
         <div class="aboutMe">
             <div class="title">
                 <h1>About Me</h1>
             </div>
             <div class="aboutMeContent">
+                <img id="me" src="images/headshot.JPG">
                 <h2><b>Background</b></h2>
-                <p>My name is Kevin, I'm 22 years old, 5'11, and I suck at biographies.
-                I started off pursuing a Music Production degree as an undergrad at
-                Irvine Valley College. I later entered a job that allowed me to pursue
-                a career in IT networking. After realizing that wasn't the path for me I
-                decided to join the military as a combat medic in the Army Reserve.
-                When I came back from training I was introduced to HTML by my girlfriend
-                at the time and I was hooked ever since.</p>
-                <h2>Why Root 1?</h2>
-                <p>I'm taking this root class in order to prep for the June cohort for the
-               full immersion program. I'm also trying to improve on the HTML/CSS
-               knowledge that I've already attained.</p>
-                <h2>What Kind of Job Am I Looking For?</h2>
-                <p>I'm really just trying to get an entry-level web development job anywhere,
-               just to get my feet wet in the industry ad hopefully advance from there.</p>
-                <h2>Why Web-Development Though?</h2>
-                <p>I've never been an incredible student in terms of traditional schooling.
-               If I'm not interested in the subject then I just won't be motivated to
-               pass the class. Coding is something that generally interests me. It's
-               something that I kind of have a knack for and there are nights where I
-               fantasize about being a coder for a living more than a linebacker for
-               the Raiders. Coding has by far been one of the most frustrating and yet
-               rewarding and satisfying things I have ever tried my hand at and if I
-               can make a career out of it and do it for the rest of my life then I'll
-               take any opportunity I can get.</p>
+                <p>Hey there, my name's Kevin Ngo and I am a Front-End Web Developer.
+                My passion for programming started early 2015 when I was unsure of my career path;
+                a friend of mine had suggested I try my hand at web development, so I decided to look
+                at some courses online, starting with HTML and CSS, and I've been hooked ever since.</p>
+                <p>I have a background as a IP Telephony Admin, Combat Medic, Grocery Store Cashier, Restaurant Server,
+                Inventory Manager for a retail store, and front desk at a gym. </p>
+
             </div>
         </div>
+        <!--Skills section-->
         <div class="skills">
             <div class="title">
                 <h1>Skills</h1>
             </div>
             <div class="skillsContent">
-                <div>
-                    <img class="skillsImg" src="images/html.png">
+                <div class="col-md-12 col-lg-12">
+                    <div class="skillsDiv col-md-4 col-lg-4">
+                        <h3 class="skill">HTML</h3>
+                    </div>
+                    <div class="skillsDiv col-md-offset-1 col-md-4 col-lg-4">
+                        <h3 class="skill">CSS</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="skillsDiv col-md-4 col-lg-4">
+                        <h3 class="skill">JavaScript</h3>
+                    </div>
+                    <div class="skillsDiv col-md-offset-1 col-md-4 col-lg-4">
+                        <h3 class="skill">jQuery</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="skillsDiv col-md-4 col-lg-4">
+                        <h3 class="skill">Bootstrap</h3>
+                    </div>
+                    <div class="skillsDiv col-md-offset-1 col-md-4 col-lg-4">
+                        <h3 class="skill">Git</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="skillsDiv col-md-4 col-lg-4">
+                        <h3 class="skill">Firebase</h3>
+                    </div>
+                    <div class="skillsDiv col-md-offset-1 col-md-4 col-lg-4">
+                        <h3 class="skill">AJAX</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="skillsDiv col-md-4 col-lg-4">
+                        <h3 class="skill">PHPStorm</h3>
+                    </div>
+                    <div class="skillsDiv col-md-offset-1 col-md-4 col-lg-4">
+                        <h3 class="skill">Chrome Dev Tools</h3>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--Experience section-->
+        <div class="exp">
+            <div class="title">
+                <h1>Experience</h1>
+            </div>
+        </div>
+        <!--Projects Section-->
+        <div class="projects">
+            <div class="title">
+                <h1>Projects</h1>
+            </div>
+        </div>
+        <!--Resume Section-->
+        <div class="resume">
+            <div class="title">
+                <h1>Resume</h1>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
