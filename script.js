@@ -4,22 +4,18 @@ $(document).ready(function(){
 
     $('#aboutMeNav').click(function(){
         $('.active').removeClass('active').addClass(previousDiv);
-        $('.skills').fadeOut();
-        $('.exp').fadeOut();
-        $('.projects').fadeOut();
-        $('.resume').fadeOut();
         setTimeout(function(){
             $('.aboutMe').fadeIn()
-        }, 500);
+        }, 700);
     });
 
     $('#skillsNav').click(function(){
         divFade();
         // $('.active').removeClass('active').addClass(previousDiv);
         setTimeout(function(){
-            $('.skills').removeClass('skills').addClass('active');
+            $('.skills').addClass('active');
             $('.active').fadeIn();
-        }, 500);
+        }, 700);
         previousDiv = "skills";
     });
 
@@ -27,9 +23,9 @@ $(document).ready(function(){
         divFade();
         // $('.active').removeClass('active').addClass(previousDiv);
         setTimeout(function(){
-            $('.exp').removeClass('exp').addClass('active');
+            $('.exp').addClass('active');
             $('.active').fadeIn();
-        }, 500);
+        }, 700);
         previousDiv = "exp";
     });
 
@@ -37,9 +33,9 @@ $(document).ready(function(){
         divFade();
         // $('.active').removeClass('active').addClass(previousDiv);
         setTimeout(function(){
-            $('.projects').removeClass('projects').addClass('active');
+            $('.projects').addClass('active');
             $('.active').fadeIn();
-        }, 500);
+        }, 700);
         previousDiv = "projects";
     });
 
@@ -47,19 +43,19 @@ $(document).ready(function(){
         divFade();
         // $('.active').removeClass('active').addClass(previousDiv);
         setTimeout(function(){
-            $('.resume').removeClass('resume').addClass('active');
+            $('.resume').addClass('active');
             $('.active').fadeIn();
-        }, 500);
+        }, 700);
         previousDiv = "resume";
     });
 });
 
 function divFade (){
-    $('.active').removeClass('active').addClass(previousDiv);
+    $('.active').fadeOut(400, function(){
+       $('.active').removeClass('active');
+    });
+
     $('.aboutMe').fadeOut();
-    $('.skills').fadeOut();
-    $('.exp').fadeOut();
-    $('.projects').fadeOut();
-    $('.resume').fadeOut();
+
 
 }

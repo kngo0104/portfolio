@@ -38,7 +38,7 @@ body {
     margin-right: 0;
 }
 
-.nav>li>a:hover, .nav>a:focus, .nav>li>a:active {
+.nav>li>a:hover, .nav>li>a:focus {
     background-color: transparent;
     transition: color 400ms;
     color: grey;
@@ -57,7 +57,7 @@ a:hover{
     text-decoration: none;
 
 }
-li a{
+.nav li a{
     text-decoration: none;
     color: white;
     font-size: 23px;
@@ -65,7 +65,7 @@ li a{
     font-weight: 300;
 
 }
-li {
+.nav li {
     border-top: 1px grey solid;
     text-align: center;
     margin-right: 50px;
@@ -153,15 +153,12 @@ li {
 
 
 /*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*//*SKILLS PAGE*/
-.skills{
+.skills:not(.active){
     display: none;
     opacity: 0;
     transition: visibility 0s 500ms, opacity 500ms linear;
 }
-.active{
-    animation: fadein 500ms;
 
-}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -189,49 +186,71 @@ li {
 
 
 /*EXPERIENCE PAGE*//*EXPERIENCE PAGE*//*EXPERIENCE PAGE*//*EXPERIENCE PAGE*//*EXPERIENCE PAGE*//*EXPERIENCE PAGE*/
-.exp {
+.exp:not(.active) {
     display: none;
     opacity: 0;
     transition: visibility 0s 500ms, opacity 500ms linear;
 }
-.expActive{
-    visibility: visible;
-    /*animation: fadein 500ms;*/
-}
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.expContent{
+    margin-top: -30px;
+    font-family: Armata;
 }
 
+.expContent li {
+    color: white;
+}
+#laFit{
+    height: 80px;
+    width: 80px;
+}
+
+#uniqlo{
+    height: 50px;
+    width: 100px;
+}
+#army {
+    height: 80px;
+    width: 80px;
+}
+
+#lps{
+    height: 80px;
+    width: 100px;
+}
 /*PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS*/
-.projects {
+.projects:not(.active) {
     display: none;
     opacity: 0;
     transition: visibility 0s 500ms, opacity 500ms linear;
 }
-.projectsActive{
-    visibility: visible;
-    /*animation: fadein 500ms;*/
+.projectsImage{
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+    border-radius: 10px;
 }
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.projectsImageSec{
+    height: 300px;
+    width: 500px;
+
+}
+.projectsDescription > h4 {
+    color: white;
+    font-family: Armata;
+    text-align: center;
 }
 /*Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume Resume*/
-.resume{
+.resume:not(.active){
     display: none;
     opacity: 0;
     transition: visibility 0s 500ms, opacity 500ms linear;
 }
-.resumeActive{
-    visibility: visible;
-    /*animation: fadein 500ms;*/
-}
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+
 /*MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES*/
+.active{
+    display: auto;
+
+}
 @media (max-width: 991px) {
     .skillsDiv{
         margin-right: 100px;
@@ -243,6 +262,13 @@ li {
         margin-left: 0px;
     }
 }
-@media(max-width: 1280px){
-
+@media (min-width: 1500px){
+    #me{
+        margin-left: 200px;
+    }
+}
+@media(min-width: 1920px){
+    #me{
+        margin-left: 300px;
+    }
 }
