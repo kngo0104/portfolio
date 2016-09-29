@@ -3,6 +3,7 @@
 <head>
     <title>Kevin Ngo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link type="text/css" rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,900|Titillium+Web|Armata'
           rel='stylesheet' type='text/css'>
@@ -10,6 +11,7 @@
           rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="script.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -21,12 +23,12 @@
                 <li><a id='skillsNav' href="#">Skills</a></li>
                 <li><a id="expNav" href="#">Experience</a></li>
                 <li><a id="projectsNav" href="#">Projects</a></li>
-                <li><a id="resumeNav" href="#">Resume</a></li>
+                <!--<li><a id="resumeNav" href="#">Resume</a></li>-->
                 <li>
                     <div class="social">
-                        <a href="#" ><img id="gh" src="images/github.png"></a>
-                        <a href="#" ><img id="ln" src="images/linkedin.png"></a>
-                        <a href="#" ><img id="em" src="images/email.png"></a>
+                        <a href="https://github.com/kngo8450" ><img id="gh" src="images/github.png"></a>
+                        <a href="https://www.linkedin.com/in/kevngo94
+" ><img id="ln" src="images/linkedin.png"></a>
                     </div>
                 </li>
             </ul>
@@ -41,12 +43,19 @@
             <div class="aboutMeContent">
                 <img id="me" src="images/headshot.JPG">
                 <h2><b>Background</b></h2>
-                <p>Hey there, my name's Kevin Ngo and I am a Front-End Web Developer.
-                My passion for programming started early 2015 when I was unsure of my career path;
+                <p>Hey there, my name's Kevin Ngo and I am a Front-End Web Developer. I recently graduated from
+                    an accelerated web development program called Learning-Fuze where I spent 700+ hours devoted to
+                    learning and practicing code. I started off working as a telecom admin in an escrow company and was exposed
+                    to web development through some of my coworkers at that company.
+
+                    My passion for programming started early 2015 when I was unsure of my career path;
                 a friend of mine had suggested I try my hand at web development, so I decided to look
                 at some courses online, starting with HTML and CSS, and I've been hooked ever since.</p>
                 <p>I have a background as a IP Telephony Admin, Combat Medic, Grocery Store Cashier, Restaurant Server,
-                Inventory Manager for a retail store, and front desk at a gym. </p>
+                Inventory Manager for a retail store, and front desk at a gym. I am currently looking for an opportunity
+                as a junior front end web developer. I would love to work for a company where I can collaborate with my peers
+                and contribute as part of a team towards a goal, fixing problems and improving on projects along with my own
+                personal skills. Thank you for taking a look at my portfolio!</p>
 
             </div>
         </div>
@@ -58,10 +67,10 @@
             <div class="skillsContent">
                 <div class="col-md-12 col-lg-12">
                     <div class="skillsDiv col-md-4 col-lg-4">
-                        <h3 class="skill">HTML</h3>
+                        <h3 class="skill">HTML5</h3>
                     </div>
                     <div class="skillsDiv col-md-offset-1 col-md-4 col-lg-4">
-                        <h3 class="skill">CSS</h3>
+                        <h3 class="skill">CSS3</h3>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-12">
@@ -146,24 +155,71 @@
                 <h1>Projects</h1>
             </div>
             <div class="projectsContent">
-                <div class="projectsImageSec col-md-6">
-                    <img class="projectsImage" src="images/streetfightergame.jpg"/>
+                <div class="projectsDiv col-md-12">
+                    <div class="projectsImageSec col-md-6">
+                        <img class="projectsImage" src="images/streetfightergame.jpg"/>
+                    </div>
+                    <div class="projectsDescription col-md-6">
+                        <h4>Street Fighter Memory Match Game</h4>
+                        <p class="projectsLinks"><a href="#">Live</a> | <a href="#">Github</a></p>
+                        <p>A Street Fighter inspired card game where the player must match characters in order to win.
+                            The game keeps track of how many games the player has played, how many attempts per game,
+                            and overall accuracy of player per game. I used HTML, CSS, JavaScript and jQuery for the functionality.
+                        </p>
+                    </div>
                 </div>
-                <div class="projectsDescription col-md-6">
-                    <h4>Street Fighter Memory Match Game</h4>
-                    <p>
-
-                    </p>
+                <div class="projectsDiv col-md-12">
+                    <div class="projectsDescription col-md-6">
+                        <h4>Student Grade Table</h4>
+                        <p class="projectsLinks"><a href="#">Live</a> | <a href="#">Github</a></p>
+                        <p>
+                            A tool to keep track of students, students' classes, and students' grades within class and
+                            calculates average scores of all the students. Users are able to add and delete students from
+                            database.
+                            Utilized HTML and Bootstrap for the UI/UX. JavaScript and jQuery used for functionality and
+                            to send information to and from a Google Firebase database.
+                        </p>
+                    </div>
+                    <div class="projectsImageSec col-md-6">
+                        <img class="projectsImage" src="images/sgt.jpg"/>
+                    </div>
+                </div>
+                <div class="projectsDiv col-md-12">
+                    <div class="projectsImageSec col-md-6">
+                        <img class="projectsImage" src="images/mboutique2.jpg"/>
+                    </div>
+                    <div class="projectsDescription col-md-6">
+                        <h4>mBoutique - Macaron Website</h4>
+                        <p class="projectsLinks"><a href="#">Live</a> | <a href="#">Github</a></p>
+                        <p>
+                           An online website for a macaron store styled specifically to the request of a UI/UX manager.
+                            Used HTML, CSS, and Bootstrap for the basic layout of website and positioning of content.
+                            Utilized AngularJS to route between pages on website.
+                        </p>
+                    </div>
+                </div>
+                <div class="projectsDiv col-md-12">
+                    <div class="projectsDescription col-md-6">
+                        <h4>Superhero Tic-Tac-Toe Game</h4>
+                        <p class="projectsLinks"><a href="#">Live</a> | <a href="#">Github</a></p>
+                        <p>A superhero themed tic-tac-toe game that allows for one or two player games. Players choose
+                            the amount of players playing, board size, and character pieces the play as. Used HTML, CSS
+                            and Bootstrap for basic styling. Utilized JavaScript and jQuery for basic functionality, such as
+                            dynamic board creation, board animations, win conditions, and AI for one player capability.
+                        </p>
+                    </div>
+                    <div class="projectsImageSec col-md-6">
+                        <img class="projectsImage" src="images/tictactoe.jpg"/>
+                    </div>
                 </div>
             </div>
         </div>
         <!--Resume Section-->
-        <div class="resume">
-            <div class="title">
-                <h1>Resume</h1>
-            </div>
-        </div>
-
+        <!--<div class="resume">-->
+            <!--<div class="title">-->
+                <!--<h1>Resume</h1>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
 </body>
 </html>

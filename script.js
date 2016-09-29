@@ -3,7 +3,7 @@ var previousDiv = "";
 $(document).ready(function(){
 
     $('#aboutMeNav').click(function(){
-        $('.active').removeClass('active').addClass(previousDiv);
+        divFade();
         setTimeout(function(){
             $('.aboutMe').fadeIn()
         }, 700);
@@ -11,7 +11,6 @@ $(document).ready(function(){
 
     $('#skillsNav').click(function(){
         divFade();
-        // $('.active').removeClass('active').addClass(previousDiv);
         setTimeout(function(){
             $('.skills').addClass('active');
             $('.active').fadeIn();
@@ -21,7 +20,6 @@ $(document).ready(function(){
 
     $('#expNav').click(function(){
         divFade();
-        // $('.active').removeClass('active').addClass(previousDiv);
         setTimeout(function(){
             $('.exp').addClass('active');
             $('.active').fadeIn();
@@ -31,7 +29,6 @@ $(document).ready(function(){
 
     $('#projectsNav').click(function(){
         divFade();
-        // $('.active').removeClass('active').addClass(previousDiv);
         setTimeout(function(){
             $('.projects').addClass('active');
             $('.active').fadeIn();
@@ -39,15 +36,15 @@ $(document).ready(function(){
         previousDiv = "projects";
     });
 
-    $('#resumeNav').click(function(){
-        divFade();
-        // $('.active').removeClass('active').addClass(previousDiv);
-        setTimeout(function(){
-            $('.resume').addClass('active');
-            $('.active').fadeIn();
-        }, 700);
-        previousDiv = "resume";
-    });
+    // $('#resumeNav').click(function(){
+    //     divFade();
+    //     // $('.active').removeClass('active').addClass(previousDiv);
+    //     setTimeout(function(){
+    //         $('.resume').addClass('active');
+    //         $('.active').fadeIn();
+    //     }, 700);
+    //     previousDiv = "resume";
+    // });
 });
 
 function divFade (){
